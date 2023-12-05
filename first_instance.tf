@@ -1,7 +1,7 @@
 provider "aws" {
   region = "us-east-1"
-  access_key = "AKIA27I7RI4IR7VXP47I"
-  secret_key = "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"
+  access_key = "XYAKIA27I7RI4IR7VXP47I"
+  secret_key = "ZiRqOSseOeEeOtn9jqSGOAt3yFV/6UDoduFp/Zt0W"
 }
 
 resource "aws_instance" "Mock-Service" {
