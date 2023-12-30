@@ -11,5 +11,20 @@ resource "aws_instance" "example_instance" {
     command = "echo 'Hello, Terraform!'"
   }
 
+
+}
+
+variable "prefix" {
+}
+
+variable "location" {
+}
+
+terraform {
+  backend "s3" {
+    bucket = "my-terraform-state-bucket"
+    key    = "path/to/my/terraform.tfstate"
+    region = "us-west-2"
+  }
 }
 
